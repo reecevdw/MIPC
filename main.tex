@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{listings} % Include the listings package
+\usepackage[T1]{fontenc} % Add the fontenc package with T1 encoding
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{stmaryrd}
+
+\usetikzlibrary{automata, positioning, arrows}
+
+\usepackage{./Layout/EngReport}
+
+\graphicspath{{Images/}}
+\bibliography{./Layout/Sources}
+\onehalfspacing
+\graphicspath{Images/}
+\geometry{letterpaper, portrait, includeheadfoot=true, hmargin=1in, vmargin=1in}
+
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage{multicol}
+\usepackage{microtype}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usetikzlibrary{topaths,calc,automata,positioning}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{problem}{Problem}
+
+\usepackage{listings}
+\usepackage{xcolor} % for custom colors
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red},
+    frame=single,
+    breaklines=true,
+    showstringspaces=false
+}
+
+\theoremstyle{definition}
+\newtheorem*{example*}{Example}
+\newtheorem*{solution*}{Solution}
+
+\theoremstyle{remark}
+\newtheorem*{remark*}{Remark}
+
+\renewcommand{\implies}{\Longrightarrow\hspace{5mm}}
+\renewcommand{\iff}{\hspace{5mm}\Longleftrightarrow\hspace{5mm}}
+
+\setlength{\arraycolsep}{4pt}
+
+
+%\fontsize{font size}{vertsize (usually 1.2x)}\selectfont
+
+\begin{document}
+\renewcommand{\familydefault}{\rmdefault}
+
+\input{./Layout/titlepage}
+\input{./Layout/headerfooter}
+%\tableofcontents
+\pagebreak
+
+
+\fontsize{12}{20}\selectfont{
+
+
+\input{./Sections/problem1.tex}
+\pagebreak
+
+\input{./Sections/problem2.tex}
+\pagebreak
+
+\input{./Sections/problem3.tex}
+\pagebreak
+
+\input{./Sections/interview1.tex}
+\pagebreak
+
+}
+
+%\printbibliography
+
+\end{document}
